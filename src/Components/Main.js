@@ -14,6 +14,9 @@ const Main = () => {
           </div>
           <span className="main-topic">developer</span>
         </div>
+        <div class="mouse">
+          <span></span>
+        </div>
       </div>
     </>
   );

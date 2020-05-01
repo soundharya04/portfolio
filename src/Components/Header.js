@@ -17,13 +17,11 @@ const Header = () => {
       const scrolled = (winScroll / height) * 100;
       if (isTop) {
         setScroll({
-          ...scroll,
           scrolled: true,
           percentage: Math.floor(scrolled),
         });
       } else {
         setScroll({
-          ...scroll,
           scrolled: false,
           percentage: Math.floor(scrolled),
         });
@@ -35,7 +33,7 @@ const Header = () => {
       <div>
         <span>
           <b>ANDRU</b>
-          <i>Developer</i>
+          {scroll.scrolled ? <i>Developer</i> : null}
         </span>
         <span
           className="menu-btn"

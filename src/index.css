@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -19,6 +23,7 @@ code {
   -webkit-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
   position: fixed;
+  z-index: 1;
 }
 .header.scrolled {
   background-color: #1d1e20;
@@ -52,14 +57,14 @@ code {
 /* The progress container (grey background) */
 .progress-container {
   width: 100%;
-  height: 8px;
+  height: 3px;
   background: rgb(255, 255, 255, 0.1);
 }
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
-  height: 8px;
-  background: rgb(255, 0, 0, 0.75);
+  height: 3px;
+  background: rgb(255, 0, 0);
   width: 0%;
 }
 
@@ -127,7 +132,7 @@ code {
 
 .main-topic {
   align-self: center;
-  margin-left: 100px;
+  margin-left: 200px;
   text-transform: uppercase;
   -webkit-text-stroke: 5px #fff;
   font-size: 80px;
@@ -150,15 +155,19 @@ code {
 }
 
 .main-topic::after {
-  content: "|";
+  content: "_";
   position: absolute;
   right: 0;
+  font-size: 80px;
+  -webkit-text-stroke: 0px;
+  color: #fff;
+  bottom: 0px;
   -webkit-animation: caret infinite;
   animation: caret infinite;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-timing-function: steps(1, end);
-  animation-timing-function: steps(1, end);
+  -webkit-animation-timing-function: steps(1.4ch, end);
+  animation-timing-function: steps(1.4ch, end);
 }
 
 @-webkit-keyframes dev {
@@ -199,4 +208,131 @@ code {
   50% {
     opacity: 1;
   }
+}
+
+.mouse {
+  display: block;
+  width: 28px;
+  height: 48px;
+  border-radius: 11px 11px 15px 15px;
+  border: 1px solid #fff;
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+}
+
+.mouse span {
+  display: block;
+  margin: 6px auto;
+  width: 2px;
+  height: 5px;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid transparent;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+.about {
+  background-color: #1d1e20;
+  color: #fff;
+  padding: 50px 100px;
+}
+
+.about > header {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 4px #000;
+  position: relative;
+  width: fit-content;
+}
+
+.about > header::before {
+  background-color: red;
+  content: "";
+  width: 30px;
+  right: 20px;
+  height: 5px;
+  display: inline-block;
+  position: absolute;
+  bottom: -20px;
+  border-bottom-left-radius: 20px;
+}
+.about > header::after {
+  background-color: red;
+  content: "";
+  width: 15px;
+  right: 0;
+  height: 5px;
+  display: inline-block;
+  position: absolute;
+  bottom: -20px;
+  border-bottom-right-radius: 20px;
+}
+
+.about-content {
+  display: flex;
+}
+
+.about-content > .frame {
+  width: 100%;
+  border: 1px solid rgb(255, 255, 255, 0.3);
+  margin: 45px 45px 45px 0;
+}
+
+.about-content > .about-text {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-content > .about-text > p {
+  color: #ccc;
+  line-height: 2;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.skill-group > span:first-child {
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+}
+
+.about-content progress {
+  width: 100%;
+  height: 10px;
+  appearance: none;
+}
+
+.about-content progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+.about-content progress[value]::-webkit-progress-value {
+  border-radius: 2px;
+  background-color: rgb(255, 0, 0, 0.8);
 }

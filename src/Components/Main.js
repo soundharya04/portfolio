@@ -10,7 +10,7 @@ const Main = () => {
         <div className="main-content">
           <div className="side-bar-contact">
             <span>Follow Me</span>
-            <img src={Insta} />
+            <img src={Insta} alt={"logo"} />
           </div>
           <span className="main-topic">developer</span>
         </div>

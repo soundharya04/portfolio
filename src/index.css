@@ -121,13 +121,13 @@ code {
   white-space: nowrap;
   display: inline-block;
   position: relative;
-  max-width: 12ch;
+  max-width: 11.4ch;
   -webkit-animation: dev;
   animation: dev;
-  -webkit-animation-duration: 10s;
-  animation-duration: 10s;
-  -webkit-animation-timing-function: steps(25, end);
-  animation-timing-function: steps(25, end);
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-timing-function: steps(12, end);
+  animation-timing-function: steps(12, end);
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
@@ -149,8 +149,8 @@ code {
   100% {
     width: 0;
   }
-  20%,
-  80% {
+  25%,
+  75% {
     width: 12ch;
   }
 }
@@ -160,8 +160,8 @@ code {
   100% {
     width: 0;
   }
-  20%,
-  80% {
+  25%,
+  75% {
     width: 12ch;
   }
 }

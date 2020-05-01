@@ -121,10 +121,14 @@ code {
   white-space: nowrap;
   display: inline-block;
   position: relative;
+  max-width: 12ch;
   -webkit-animation: dev;
   animation: dev;
+  -webkit-animation-duration: 10s;
   animation-duration: 10s;
+  -webkit-animation-timing-function: steps(25, end);
   animation-timing-function: steps(25, end);
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
@@ -132,9 +136,23 @@ code {
   content: "|";
   position: absolute;
   right: 0;
+  -webkit-animation: caret infinite;
   animation: caret infinite;
+  -webkit-animation-duration: 1s;
   animation-duration: 1s;
+  -webkit-animation-timing-function: steps(1, end);
   animation-timing-function: steps(1, end);
+}
+
+@-webkit-keyframes dev {
+  0%,
+  100% {
+    width: 0;
+  }
+  20%,
+  80% {
+    width: 12ch;
+  }
 }
 
 @keyframes dev {
@@ -144,7 +162,16 @@ code {
   }
   20%,
   80% {
-    width: 10.2em;
+    width: 12ch;
+  }
+}
+@-webkit-keyframes caret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }
 @keyframes caret {

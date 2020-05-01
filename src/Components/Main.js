@@ -12,7 +12,7 @@ const Main = () => {
             <span>Follow Me</span>
             <img src={Insta} />
           </div>
-          <span className="main-topic">deveoper</span>
+          <span className="main-topic">developer</span>
         </div>
       </div>
     </>

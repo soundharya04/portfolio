@@ -115,28 +115,44 @@ code {
   -webkit-text-stroke: 5px #fff;
   font-size: 80px;
   font-weight: 900;
-  /* letter-spacing: 5px; */
+  letter-spacing: 5px;
   color: transparent;
-  -webkit-animation: dev 3s steps(9) infinite;
-  animation: dev 3s steps(9) infinite;
   overflow: hidden;
   white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  -webkit-animation: dev;
+  animation: dev;
+  animation-duration: 10s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes dev {
-  0% {
-    width: 0ch;
-  }
-  100% {
-    width: 9ch;
-  }
+.main-topic::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
 }
 
 @keyframes dev {
-  0% {
-    width: 0ch;
-  }
+  0%,
   100% {
-    width: 9ch;
+    width: 0;
+  }
+  20%,
+  80% {
+    width: 10.2em;
+  }
+}
+@keyframes caret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }

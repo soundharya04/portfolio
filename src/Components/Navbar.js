@@ -13,7 +13,7 @@ const Navbar = () => {
   const nomove = () => {
     var myvar = setTimeout(() => {
       setNav(false);
-    }, 15000);
+    }, 20000);
     //clearmove(myvar);
   };
 

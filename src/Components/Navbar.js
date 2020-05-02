@@ -13,8 +13,8 @@ const Navbar = () => {
   const nomove = () => {
     var myvar = setTimeout(() => {
       setNav(false);
-    }, 20000);
-    //clearmove(myvar);
+    }, 30000);
+    // clearmove(myvar);
   };
 
   const clearmove = (myvar) => {

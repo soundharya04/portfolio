@@ -1,9 +1,10 @@
-.body {
+body {
   margin: 0;
   overflow-x: hidden;
 }
 
-.layout {
+body:hover + .hidden_nav {
+  display: inline;
 }
 .home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
@@ -178,4 +179,10 @@ h3 {
   margin-top: 45px;
   margin-left: 30px;
   font-family: cursive;
+}
+
+/*-----Navbar-----*/
+
+.hidden_nav {
+  display: none;
 }

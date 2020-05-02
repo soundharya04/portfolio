@@ -254,13 +254,16 @@ code {
   }
 }
 
-.about {
+.about,
+.contact {
+  opacity: 0;
   background-color: #1d1e20;
   color: #fff;
   padding: 50px 100px;
 }
 
-.about > header {
+.about > header,
+.contact > header {
   font-size: 30px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
@@ -269,7 +272,8 @@ code {
   width: fit-content;
 }
 
-.about > header::before {
+.about > header::before,
+.contact > header::before {
   background-color: red;
   content: "";
   width: 30px;
@@ -280,7 +284,8 @@ code {
   bottom: -20px;
   border-bottom-left-radius: 20px;
 }
-.about > header::after {
+.about > header::after,
+.contact > header::after {
   background-color: red;
   content: "";
   width: 15px;
@@ -292,7 +297,8 @@ code {
   border-bottom-right-radius: 20px;
 }
 
-.about-content {
+.about-content,
+.contact-content {
   display: flex;
 }
 
@@ -321,6 +327,10 @@ code {
   height: 35px;
 }
 
+.skill-group > span:first-child > p:last-child {
+  transition: all 2s;
+}
+
 .about-content progress {
   width: 100%;
   height: 10px;
@@ -335,4 +345,73 @@ code {
 .about-content progress[value]::-webkit-progress-value {
   border-radius: 2px;
   background-color: rgb(255, 0, 0, 0.8);
+  transition: width 2s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadein {
+  transition: linear;
+  animation: fadein 2s;
+  animation-fill-mode: forwards;
+}
+
+.contact-content .frame {
+  text-align: center;
+  background-color: rgb(29, 30, 32, 0.7);
+  border: 0.1px solid rgb(255, 255, 255, 0.1);
+  padding: 50px 100px;
+}
+
+.contact header {
+  margin-bottom: 30px;
+}
+
+.box-anim {
+  position: relative;
+}
+
+.box-anim::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 0%;
+  box-sizing: border-box;
+}
+.box-anim:hover::before {
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+  transition: width 0.5s linear, height 0.5s linear;
+}
+.box-anim::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 0%;
+  box-sizing: border-box;
+}
+.box-anim:hover::after {
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid red;
+  border-right: 2px solid red;
+  transition: width 0.5s linear, height 0.5s linear;
+}
+
+.contact-frame {
+  display: flex;
+  margin: 10px 20px 20px 0px;
 }

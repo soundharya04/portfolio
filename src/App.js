@@ -16,16 +16,11 @@ import "./bootstrap.css";
 import profpic from "./images/profpic.jpg";
 
 class App extends Component {
-  componentDidMount() {
-    const dom = ReactDOM.findDOMNode(this);
-    dom.addEventListener("mousemove", (e) => {
-      return <Navbar></Navbar>;
-    });
-  }
   render() {
     return (
       <div class="body">
         <div class="layout">
+          <Navbar></Navbar>
           <Header></Header>
           <About></About>
         </div>

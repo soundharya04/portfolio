@@ -3,22 +3,6 @@ import React from "react";
 const Header = () => {
   return (
     <header id="home" className="home">
-      <nav className="hidden_nav">
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Portfolio</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
       <div className="hero_text_box">
         <h1>Soundharya Kannan</h1>
         <h2 className="slide_text">

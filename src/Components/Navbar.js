@@ -1,24 +1,59 @@
 import React from "react";
 
 const Navbar = () => {
-  return (
-    <nav className="hidden_nav">
+  const [navbar, setNav] = React.useState(false);
+
+  React.useEffect(() => {
+    window.addEventListener("mousemove", () => {
+      setNav(true);
+      nomove();
+    });
+  });
+
+  const nomove = () => {
+    var myvar = setTimeout(() => {
+      setNav(false);
+    }, 15000);
+    //clearmove(myvar);
+  };
+
+  const clearmove = (myvar) => {
+    console.log(myvar);
+    if (typeof myvar != "undefined") {
+      clearTimeout(myvar);
+    }
+  };
+  return navbar ? (
+    <nav
+      id="navbar"
+      onMouseOver={() => {
+        setNav(true);
+      }}
+    >
       <ul>
-        <li>
-          <a href="#">Home</a>
+        <li className="navlist">
+          <a className="listlink" href="#">
+            Home
+          </a>
         </li>
-        <li>
-          <a href="#">About</a>
+        <li className="navlist">
+          <a className="listlink" href="#about">
+            About
+          </a>
         </li>
-        <li>
-          <a href="#">Portfolio</a>
+        <li className="navlist">
+          <a className="listlink" href="#">
+            Portfolio
+          </a>
         </li>
-        <li>
-          <a href="#">Contact</a>
+        <li className="navlist">
+          <a className="listlink" href="#">
+            Contact
+          </a>
         </li>
       </ul>
     </nav>
-  );
+  ) : null;
 };
 
 export default Navbar;

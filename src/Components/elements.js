@@ -171,17 +171,19 @@ export const Card = ({ color = null, bodyStyle, width, height, ...props }) => {
 
 export const BorderedCard = ({ bodyStyle, width, height, ...props }) => {
   return (
-    <div
-      className="bordered-card"
-      style={{
-        border: "0.02px solid rgba(255,255,255,0.1)",
-        backgroundColor: "rgba(255,255,255,0.01)",
-        width: width ? `${width}px` : "100%",
-        height: height ? `${height}px` : "100%",
-        ...bodyStyle,
-      }}
-    >
-      {props.children}
-    </div>
+    <BoxHighlighted bodyStyle={{ margin: "20px" }}>
+      <div
+        className="bordered-card"
+        style={{
+          border: "0.02px solid rgba(255,255,255,0.1)",
+          backgroundColor: "rgba(255,255,255,0.01)",
+          width: width ? `${width}px` : "100%",
+          height: height ? `${height}px` : "100%",
+          ...bodyStyle,
+        }}
+      >
+        {props.children}
+      </div>
+    </BoxHighlighted>
   );
 };

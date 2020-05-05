@@ -4,6 +4,7 @@ import Main from "./Components/Main";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import Skills from "./Components/Skills";
 
 const App = () => {
   React.useEffect(() => {
@@ -21,6 +22,7 @@ const App = () => {
       <Main />
       <About />
       <Contact />
+      {/* <Skills /> */}
       <Footer />
     </>
   );

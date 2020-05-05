@@ -1,4 +1,5 @@
 import React from "react";
+import RadialProgress from "./elements/radialProgress";
 
 const ValBar = ({ skill, value, view }) => {
   return (
@@ -39,10 +40,38 @@ const About = () => {
             Developer and passionate in App development and programming.
           </p>
           <div className="skills">
-            <ValBar skill="React JS" value="90" view={view} />
+            {/* <ValBar skill="React JS" value="90" view={view} />
             <ValBar skill="Node JS" value="75" view={view} />
             <ValBar skill="Python" value="85" view={view} />
-            <ValBar skill="MySQL" value="80" view={view} />
+            <ValBar skill="MySQL" value="80" view={view} /> */}
+            {/* <RadialProgress
+              name="React JS"
+              value="90"
+              nameColor="#fff"
+              valColor="red"
+              view={view}
+            />
+            <RadialProgress
+              name="Node JS"
+              value="75"
+              nameColor="#fff"
+              valColor="red"
+              view={view}
+            />
+            <RadialProgress
+              name="Python"
+              value="85"
+              nameColor="#fff"
+              valColor="red"
+              view={view}
+            />
+            <RadialProgress
+              name="MySQL"
+              value="80"
+              nameColor="#fff"
+              valColor="red"
+              view={view}
+            /> */}
           </div>
         </span>
       </div>

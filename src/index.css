@@ -508,3 +508,143 @@ footer > span:last-child > p {
 footer > span:last-child > p:hover {
   background-color: rgb(255, 255, 255, 0.1);
 }
+
+.anchor-to-top > p {
+  border-top: 3px solid rgb(255, 255, 255, 0.3);
+  border-right: 3px solid rgb(255, 255, 255, 0.3);
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 3px;
+  transform: rotate(-45deg);
+}
+
+.anchor-to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: 1px solid rgb(255, 255, 255, 0.3);
+  box-shadow: 2px 2px 4px #000;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.anchor-to-top:hover {
+  background-color: rgb(255, 255, 255, 0.1);
+  text-shadow: 2px 2px 4px #000;
+  border: none;
+}
+
+.radial-progress {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background: #fff;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25); */
+}
+
+.radial-progress .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.radial-progress .percent svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.radial-progress .percent svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+
+.radial-progress .percent svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+/* .radial-progress .percent svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - ((440 * 87) / 100));
+  stroke: #03a9f4;
+} */
+
+.radial-progress .percent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: #999; */
+}
+
+.radial-progress .percent .number h2 {
+  font-size: 48px;
+  display: flex;
+}
+
+.radial-progress .percent .number h2 span {
+  font-size: 24px;
+  align-self: center;
+}
+
+.side-header {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 4px #000;
+  position: relative;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.side-header::before {
+  background-color: red;
+  content: "";
+  width: 30px;
+  right: 20px;
+  height: 5px;
+  display: inline-block;
+  position: absolute;
+  bottom: -20px;
+  border-bottom-left-radius: 20px;
+}
+
+.side-header::after {
+  background-color: red;
+  content: "";
+  width: 15px;
+  right: 0;
+  height: 5px;
+  display: inline-block;
+  position: absolute;
+  bottom: -20px;
+  border-bottom-right-radius: 20px;
+}
+
+.vertical-section {
+  opacity: 0;
+  background-color: #1d1e20;
+  color: #fff;
+  padding: 50px 100px;
+}
+
+.vertical-section > .content {
+  display: flex;
+  padding: 10px;
+}

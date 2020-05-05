@@ -1,4 +1,5 @@
 import React from "react";
+import AnchorToTop from "./elements/anchorToTop";
 
 const Header = () => {
   const [scroll, setScroll] = React.useState({
@@ -50,6 +51,7 @@ const Header = () => {
           ></div>
         </div>
       )}
+      {scroll.scrolled ? null : <AnchorToTop />}
     </div>
   );
 };

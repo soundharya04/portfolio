@@ -269,98 +269,24 @@ code {
   }
 }
 
-.about,
-.contact {
-  opacity: 0;
-  background-color: #1d1e20;
-  color: #fff;
-  padding: 50px 100px;
-}
-
-.about > header,
-.contact > header {
-  font-size: 30px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  text-shadow: 2px 2px 4px #000;
-  position: relative;
-  width: fit-content;
-}
-
-.about > header::before,
-.contact > header::before {
-  background-color: red;
-  content: "";
-  width: 30px;
-  right: 20px;
-  height: 5px;
-  display: inline-block;
-  position: absolute;
-  bottom: -20px;
-  border-bottom-left-radius: 20px;
-}
-.about > header::after,
-.contact > header::after {
-  background-color: red;
-  content: "";
-  width: 15px;
-  right: 0;
-  height: 5px;
-  display: inline-block;
-  position: absolute;
-  bottom: -20px;
-  border-bottom-right-radius: 20px;
-}
-
-.about-content,
-.contact-content {
-  display: flex;
-}
-
-.about-content > .frame {
+.about .content .frame {
   width: 100%;
+  height: 300px;
   border: 1px solid rgb(255, 255, 255, 0.3);
   margin: 45px 45px 45px 0;
 }
 
-.about-content > .about-text {
+.about .content > .about-text {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.about-content > .about-text > p {
+.about .content > .about-text > p {
   color: #ccc;
   line-height: 2;
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 1.5px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
-.skill-group > span:first-child {
-  display: flex;
-  justify-content: space-between;
-  height: 35px;
-}
-
-.skill-group > span:first-child > p:last-child {
-  transition: all 2s infinite;
-}
-
-.about-content progress {
-  width: 100%;
-  height: 10px;
-  appearance: none;
-}
-
-.about-content progress[value]::-webkit-progress-bar {
-  background-color: #eee;
-  border-radius: 2px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-}
-.about-content progress[value]::-webkit-progress-value {
-  border-radius: 2px;
-  background-color: rgb(255, 0, 0, 0.8);
-  transition: width 2s;
 }
 
 @keyframes fadein {
@@ -378,15 +304,11 @@ code {
   animation-fill-mode: forwards;
 }
 
-.contact-content .frame {
+.contact .content .contact-info {
   text-align: center;
   background-color: rgb(29, 30, 32, 0.7);
   border: 0.1px solid rgb(255, 255, 255, 0.1);
   padding: 50px 100px;
-}
-
-.contact header {
-  margin-bottom: 30px;
 }
 
 .box-anim {
@@ -405,8 +327,8 @@ code {
 .box-anim:hover::before {
   width: 100%;
   height: 100%;
-  border-top: 2px solid red;
-  border-left: 2px solid red;
+  border-top: 1px solid red;
+  border-left: 1px solid red;
   transition: width 0.5s linear, height 0.5s linear;
 }
 .box-anim::after {
@@ -421,14 +343,9 @@ code {
 .box-anim:hover::after {
   width: 100%;
   height: 100%;
-  border-bottom: 2px solid red;
-  border-right: 2px solid red;
+  border-bottom: 1px solid red;
+  border-right: 1px solid red;
   transition: width 0.5s linear, height 0.5s linear;
-}
-
-.contact-frame {
-  display: flex;
-  margin: 10px 20px 20px 0px;
 }
 
 .contact .form .identity {
@@ -646,5 +563,25 @@ footer > span:last-child > p:hover {
 
 .vertical-section > .content {
   display: flex;
-  padding: 10px;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+.box-highlighted {
+  display: flex;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin: 20px;
+}
+.bordered-card {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 20px;
 }

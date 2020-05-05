@@ -1,5 +1,5 @@
 import React from "react";
-import AnchorToTop from "./elements/anchorToTop";
+import { AnchorToTop } from "./elements";
 
 const Header = () => {
   const [scroll, setScroll] = React.useState({

@@ -4,6 +4,7 @@ import React, { Component, ReactDOM } from "react";
 import About from "./Components/About";
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
+import Projects from "./Components/Projects";
 
 //styles
 import "./App.css";
@@ -23,6 +24,7 @@ class App extends Component {
           <Navbar></Navbar>
           <Header></Header>
           <About></About>
+          <Projects></Projects>
         </div>
       </div>
     );

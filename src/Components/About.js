@@ -91,7 +91,7 @@ class About extends Component {
                   <div className="tag">React</div>
                   <div className="level" style={{ width: "75%" }}></div>
                 </div>
-                <span className="val">70%</span>
+                <span className="val">75%</span>
               </div>
               <div className="level_bar">
                 <div className="bar">
@@ -112,14 +112,14 @@ class About extends Component {
                   <div className="tag">Redux</div>
                   <div className="level" style={{ width: "70%" }}></div>
                 </div>
-                <span className="val">80%</span>
+                <span className="val">70%</span>
               </div>
               <div className="level_bar">
                 <div className="bar">
                   <div className="tag">Oracle</div>
                   <div className="level" style={{ width: "90%" }}></div>
                 </div>
-                <span className="val">80%</span>
+                <span className="val">90%</span>
               </div>
             </div>
           </div>

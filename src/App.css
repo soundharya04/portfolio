@@ -3,6 +3,11 @@ body {
   overflow-x: hidden;
 }
 
+.row {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
 .home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("./images//bg/workingbg.jpg");
@@ -185,6 +190,7 @@ h3 {
 .skills {
   background-color: rgb(247, 245, 245);
   height: 20%;
+  padding-bottom: 25px;
 }
 .about_skills {
   height: 20%;
@@ -414,4 +420,128 @@ nav {
   to {
     opacity: 1;
   }
+}
+
+/*-----Projects------*/
+
+.projects {
+  height: 25%;
+
+  margin-bottom: 25px;
+  padding-bottom: 30px;
+}
+
+.projects_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.snowpass_pro {
+  display: flex;
+  justify-content: center;
+  width: 26%;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  margin: 25px;
+  transition: width 0.2s ease;
+}
+
+.snowpass_pro:hover {
+  width: 27%;
+}
+
+.snowpass_pro:hover .overlay {
+  background-color: black;
+  opacity: 0.7;
+}
+
+.snowpass_img {
+  height: 350px;
+  width: 350px;
+}
+
+.purple_pro {
+  display: flex;
+  justify-content: center;
+  width: 26%;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  margin-top: 50px;
+  transition: width 0.2s ease;
+}
+
+.purple_pro:hover {
+  width: 27%;
+}
+
+.purple_pro:hover .overlay {
+  background-color: black;
+  opacity: 0.7;
+}
+
+.purple_img {
+  height: 350px;
+  width: 350px;
+}
+
+.pro_caption {
+  color: teal;
+  font-size: large;
+  text-align: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  font-weight: bold;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.text {
+  color: whitesmoke;
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+}
+
+.analytic_pro {
+  display: flex;
+  align-self: baseline;
+  width: 26%;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  transition: width 0.2s ease;
+
+  margin: 25px;
+}
+
+.analytic_pro:hover {
+  width: 27%;
+}
+.analytic_pro:hover .overlay {
+  background-color: black;
+  opacity: 0.7;
+}
+
+.analytic_img {
+  height: 350px;
+  width: 350px;
 }

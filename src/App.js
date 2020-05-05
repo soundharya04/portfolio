@@ -5,6 +5,7 @@ import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Skills from "./Components/Skills";
+import Services from "./Components/Services";
 
 const App = () => {
   React.useEffect(() => {
@@ -23,6 +24,7 @@ const App = () => {
       <About />
       <Contact />
       <Skills />
+      <Services />
       <Footer />
     </>
   );

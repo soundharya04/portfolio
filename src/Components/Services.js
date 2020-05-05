@@ -12,7 +12,10 @@ const Services = () => {
         </p>
       </BorderedCard>
       <span style={{ marginTop: "50px" }}>
-        <BorderedCard width="300">
+        <BorderedCard
+          width="300"
+          bodyStyle={{ backgroundColor: "rgba(255,255,255,0.05)" }}
+        >
           <h2>Coaching</h2>
           <p>Do you want to become a powerful programmer? Come to us.</p>
         </BorderedCard>

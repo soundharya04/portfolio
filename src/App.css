@@ -445,11 +445,6 @@ nav {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
   margin: 25px;
-  transition: width 0.2s ease;
-}
-
-.snowpass_pro:hover {
-  width: 27%;
 }
 
 .snowpass_pro:hover .overlay {
@@ -470,11 +465,6 @@ nav {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
   margin-top: 50px;
-  transition: width 0.2s ease;
-}
-
-.purple_pro:hover {
-  width: 27%;
 }
 
 .purple_pro:hover .overlay {
@@ -528,14 +518,9 @@ nav {
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
-  transition: width 0.2s ease;
-
   margin: 25px;
 }
 
-.analytic_pro:hover {
-  width: 27%;
-}
 .analytic_pro:hover .overlay {
   background-color: black;
   opacity: 0.7;

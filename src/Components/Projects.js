@@ -26,7 +26,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="purple_pro">
-          <div>
+          <div className="resize">
             <img className="purple_img" src={purple}></img>
             <div className="pro_caption">PURPLE</div>
             <div className="overlay">

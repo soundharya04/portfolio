@@ -540,13 +540,14 @@ nav {
 }
 
 .vsection {
-  height: 20%;
+  height: 40%;
   width: 100%;
-  -webkit-clip-path: polygon(50% 17%, 100% 0, 100% 84%, 50% 100%, 0 84%, 0 0);
-  clip-path: polygon(50% 17%, 100% 0, 100% 84%, 50% 100%, 0 84%, 0 0);
+  -webkit-clip-path: polygon(50% 17%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+  clip-path: polygon(50% 17%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: rgb(54, 54, 54);
+  background-color: #252934;
+  padding: 25px;
 }

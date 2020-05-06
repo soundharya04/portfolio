@@ -5,6 +5,7 @@ import About from "./Components/About";
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
 import Projects from "./Components/Projects";
+import Contacts from "./Components/Contacts";
 
 //styles
 import "./App.css";
@@ -25,6 +26,7 @@ class App extends Component {
           <Header></Header>
           <About></About>
           <Projects></Projects>
+          <Contacts></Contacts>
         </div>
       </div>
     );

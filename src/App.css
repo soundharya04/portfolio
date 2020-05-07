@@ -542,8 +542,8 @@ nav {
 .vsection {
   height: 40%;
   width: 100%;
-  -webkit-clip-path: polygon(50% 13%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
-  clip-path: polygon(50% 13%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+  -webkit-clip-path: polygon(50% 10%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+  clip-path: polygon(50% 10%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -554,10 +554,15 @@ nav {
   margin-bottom: 30px;
 }
 
+.con_flex {
+  display: flex;
+  width: 100%;
+}
+
 .contact {
   display: flex;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 20%;
+  margin-right: 5%;
 }
 
 .contact_section {
@@ -627,4 +632,54 @@ nav {
   border-left-color: rgb(221, 34, 50);
   transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
     height 0.25s ease-out 0.75s;
+}
+
+.reach {
+  display: flex;
+  flex: 1;
+  margin-top: 30px;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 30px;
+}
+
+.reach_info {
+  display: flex;
+}
+
+.contact_text {
+  width: 50%;
+  background-color: #22262e;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
+  align-content: center;
+  padding: 10px 15px;
+  display: inline-block;
+  border: 1px solid #2e2f30;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.con_button {
+  justify-content: center;
+  margin-left: 15%;
+  width: 25%;
+  background-color: #22262e;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-content: center;
+  padding: 10px 15px;
+  display: inline-block;
+  border: 1px solid #2e2f30;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+}
+
+.con_button:hover {
+  border: 1px solid rgb(17, 194, 47);
+}
+.contact_text:hover {
+  border: 1px solid rgb(221, 34, 50);
 }

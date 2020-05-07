@@ -655,7 +655,7 @@ nav {
   align-content: center;
   padding: 10px 15px;
   display: inline-block;
-  border: 1px solid #2e2f30;
+  border: 2px solid #2e2f30;
   border-radius: 4px;
   box-sizing: border-box;
   color: white;
@@ -681,5 +681,5 @@ nav {
   border: 1px solid rgb(17, 194, 47);
 }
 .contact_text:hover {
-  border: 1px solid rgb(221, 34, 50);
+  border: 2px solid rgb(221, 34, 50);
 }

@@ -542,12 +542,41 @@ nav {
 .vsection {
   height: 40%;
   width: 100%;
-  -webkit-clip-path: polygon(50% 17%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
-  clip-path: polygon(50% 17%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+  -webkit-clip-path: polygon(50% 13%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+  clip-path: polygon(50% 13%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-color: #252934;
-  padding: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.info_box {
+  display: flex;
+}
+
+.info {
+  width: 25%;
+  height: auto;
+  margin-left: 10%;
+  color: #d3cfcf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid rgb(80, 80, 80);
+  padding: 10px;
+}
+
+info_sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h5 {
+  justify-content: center;
 }

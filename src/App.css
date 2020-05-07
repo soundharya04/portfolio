@@ -539,62 +539,19 @@ nav {
   width: 350px;
 }
 
-<<<<<<< HEAD
 .vsection {
   height: 40%;
   width: 100%;
   -webkit-clip-path: polygon(50% 13%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
   clip-path: polygon(50% 13%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
-=======
-/*-----Contacts-------*/
-
-.vsection {
-  height: auto;
-  width: 100%;
-  -webkit-clip-path: polygon(50% 10%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
-  clip-path: polygon(50% 10%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
->>>>>>> 5ad99d148e757a5659c23b791794188084815c4c
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-<<<<<<< HEAD
   background-color: #252934;
   padding-top: 50px;
   padding-bottom: 50px;
   margin-bottom: 30px;
-}
-
-.info_box {
-  display: flex;
-}
-
-.info {
-  width: 25%;
-  height: auto;
-  margin-left: 10%;
-  color: #d3cfcf;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border: 1px solid rgb(80, 80, 80);
-  padding: 10px;
-}
-
-info_sec {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-h5 {
-  justify-content: center;
-=======
-  background-color: rgb(75, 72, 72);
-  padding-top: 25px;
-  margin-bottom: 30px;
-  padding-bottom: 25px;
 }
 
 .contact {
@@ -670,5 +627,4 @@ h5 {
   border-left-color: rgb(221, 34, 50);
   transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
     height 0.25s ease-out 0.75s;
->>>>>>> 5ad99d148e757a5659c23b791794188084815c4c
 }

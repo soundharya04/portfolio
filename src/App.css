@@ -550,8 +550,7 @@ nav {
   background-size: cover;
   background-color: #252934;
   padding-top: 50px;
-  padding-bottom: 50px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .con_flex {
@@ -682,4 +681,19 @@ nav {
 }
 .contact_text:hover {
   border: 2px solid rgb(221, 34, 50);
+}
+
+.footer_content {
+  border-top: 1px solid #717171;
+  width: 100%;
+  color: #717171;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-style: oblique;
+}
+
+.footer_clr {
+  color: #38ada9;
+  font-style: normal;
 }

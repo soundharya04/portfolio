@@ -55,6 +55,11 @@ const Contacts = () => {
           </div>
         </div>
       </div>
+      <footer>
+        <div className="footer_content">
+          SOUNDHARYA KANNAN <span className="footer_clr">©2020</span>
+        </div>
+      </footer>
     </Vsection>
   );
 };

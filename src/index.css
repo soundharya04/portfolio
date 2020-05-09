@@ -563,6 +563,7 @@ footer > span:last-child > p:hover {
 .vertical-section > .content {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   padding: 15px 0px;
 }
 

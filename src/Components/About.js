@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import profpic from "../images/profpic.jpg";
+import profpic from "../images/profpicnew.jpg";
 
 import css3 from "../images/carousel/css.jpg";
 import html5 from "../images/carousel/html5.jpg";

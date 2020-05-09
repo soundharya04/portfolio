@@ -13,11 +13,11 @@ const Contacts = () => {
             </span>
             <span className="contact_section">
               <h5>Email</h5>
-              <p>souns14@mail.com</p>
+              <p>sounsatoz@mail.com</p>
             </span>
             <span className="contact_section">
               <h5>Call me</h5>
-              <p>+91 9677935225</p>
+              <p>+91 9876543210</p>
             </span>
           </div>
         </div>

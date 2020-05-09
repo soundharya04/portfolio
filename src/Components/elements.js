@@ -187,3 +187,17 @@ export const BorderedCard = ({ bodyStyle, width, height, ...props }) => {
     </BoxHighlighted>
   );
 };
+
+export const Divider = ({ color, widthPercent }) => {
+  return (
+    <hr
+      style={{
+        margin: "10px 0",
+        borderWidth: "2px",
+        borderStyle: "solid",
+        width: widthPercent ? `${widthPercent}%` : "unset",
+        borderColor: color ? color : "unset",
+      }}
+    />
+  );
+};

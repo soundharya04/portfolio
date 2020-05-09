@@ -15,11 +15,10 @@ const App = () => {
         top: 0,
         behavior: "smooth",
       });
-      console.log("loaded");
     }
   }, []);
   return (
-    <>
+    <div className="App">
       <Header />
       <Main />
       <About />
@@ -28,7 +27,7 @@ const App = () => {
       <Resume />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 };
 

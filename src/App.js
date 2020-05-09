@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { Component, ReactDOM } from "react";
 
 //Components
@@ -15,9 +14,6 @@ import "./grid.css";
 import "./ionicons.min.css";
 import "./bootstrap.css";
 
-//images
-import profpic from "./images/profpic.jpg";
-
 class App extends Component {
   render() {
     return (
@@ -33,20 +29,5 @@ class App extends Component {
     );
   }
 }
-=======
-import React from "react";
-import Header from "./Components/Header";
-import Main from "./Components/Main";
-
-const App = () => {
-  return (
-    <>
-      <Header />
-      <Main />
-      <h1>hi</h1>
-    </>
-  );
-};
->>>>>>> 503598573ac0ba393a8c52698f5db1fb84b2c70d
 
 export default App;

@@ -3,7 +3,7 @@ import { Vsection } from "./Sections";
 
 const Contacts = () => {
   return (
-    <Vsection classname="vsection" heading="CONTACT">
+    <Vsection classname="vsection" heading="Contact">
       <div className="con_flex">
         <div className="contact">
           <div className="button draw">

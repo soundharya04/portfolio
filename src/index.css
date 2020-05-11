@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.header {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  background-color: transparent;
+  color: white;
+  width: 100%;
+  transition: background-color 0.2s linear;
+  position: fixed;
+}
+.header.scrolled {
+  background-color: #1d1e20;
+}
+
+.header > span {
+  display: grid;
+  text-align: center;
+  align-self: center;
+  padding: 10px 20px;
+}
+
+.header > span:first-child > b {
+  letter-spacing: 2px;
+}
+.header > span:first-child > b::first-letter {
+  color: red;
+  font-size: x-large;
+}
+.header > span:first-child > i {
+  font-variant: petite-caps;
+}
+
+.menu-btn {
+  cursor: pointer;
+}
+
+.main {
+  height: 100vh;
+}
+
+.main-bg {
+  background: url("./static/bg.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+.main-darken {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(29, 30, 32, 0.7);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.side-bar-contact {
+  font-size: 20px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 50vh;
+  left: -50px;
+  display: flex;
+}
+
+.side-bar-contact > span {
+  margin-right: 100px;
+}
+
+.side-bar-contact > img {
+  width: 25px;
+  cursor: pointer;
+}
+
+.main-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.main-topic {
+  align-self: center;
+  margin-left: 100px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 5px #fff;
+  font-size: 80px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: transparent;
+}

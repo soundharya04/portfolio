@@ -1,5 +1,5 @@
 import React from "react";
-import { RadialProgress, VSection, Card, BorderedCard } from "./elements";
+import { RadialProgress, VSection, BorderedCard } from "./elements";
 
 const Skills = () => {
   return (
@@ -8,12 +8,7 @@ const Skills = () => {
       className="skills"
       bodyStyle={{ justifyContent: "space-evenly", flexFlow: "wrap" }}
     >
-      <Card
-        color="deepskyblue"
-        height="200"
-        width="400"
-        bodyStyle={{ display: "flex", justifyContent: "space-between" }}
-      >
+      <BorderedCard height="200" width="400" bodyStyle={{ display: "flex" }}>
         <span>
           <h1>React JS</h1>
           <p>Professional React Developer with 2+ yrs of Experience</p>
@@ -22,16 +17,12 @@ const Skills = () => {
           name="React JS"
           value="90"
           nameColor="#fff"
-          valColor="red"
+          valColor="coral"
           parentClass="skills"
         />
-      </Card>
-      <Card
-        color="deepskyblue"
-        height="200"
-        width="400"
-        bodyStyle={{ display: "flex", justifyContent: "space-between" }}
-      >
+      </BorderedCard>
+
+      <BorderedCard height="200" width="400" bodyStyle={{ display: "flex" }}>
         <span>
           <h1>Node JS</h1>
           <p>Professional Node JS Developer with 2+ yrs of Experience</p>
@@ -40,10 +31,10 @@ const Skills = () => {
           name="Node JS"
           value="75"
           nameColor="#fff"
-          valColor="red"
+          valColor="yellow"
           parentClass="skills"
         />
-      </Card>
+      </BorderedCard>
 
       <BorderedCard height="200" width="400" bodyStyle={{ display: "flex" }}>
         <span>
@@ -54,7 +45,7 @@ const Skills = () => {
           name="Python"
           value="85"
           nameColor="#fff"
-          valColor="red"
+          valColor="deepskyblue"
           parentClass="skills"
         />
       </BorderedCard>
@@ -68,7 +59,7 @@ const Skills = () => {
           name="MySQL"
           value="80"
           nameColor="#fff"
-          valColor="red"
+          valColor="green"
           parentClass="skills"
         />
       </BorderedCard>

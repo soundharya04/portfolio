@@ -1,5 +1,4 @@
 import React from "react";
-import Insta from "../static/insta.svg";
 
 const Main = () => {
   return (
